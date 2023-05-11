@@ -76,11 +76,10 @@ function App(): JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
+          <Section title="Schedule Whatsapp messages easily!">
+            Schedule your WhatsApp messages easily with just a calendar.
           </Section>
-          <Section title="See Your Changes">
+          <Section title="Make automated payments hassle-free">
             <ReloadInstructions />
           </Section>
           <Section title="Debug">
@@ -89,7 +88,9 @@ function App(): JSX.Element {
           <Section title="Learn More">
             Read the docs to discover what to do next:
           </Section>
-          <LearnMoreLinks />
+          <Section title="Made with love from Team Scheduly">
+            &copy; Ayush Anand 2023
+          </Section>
         </View>
       </ScrollView>
     </SafeAreaView>

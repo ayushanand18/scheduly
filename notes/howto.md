@@ -37,3 +37,15 @@
     ```sh
     npx react-native run-android
     ```
+5. For connecting android device here's a handy article: https://flutterawesome.com/demonstrate-how-to-easily-program-android-apps-on-gitpod/
+    a. First run ngrok to pair, then run again to connect. Navigate to Wireless Debugging->pair device with pairing code. Now tunnel this and pair with adb.
+    ```sh
+    adb pair *.tcp.*
+    adb connect *.tcp.*
+    ```
+6. Make sure your android never sleeps, otherwise it will return device offline and you need to pair again.
+7. Then simply run 
+    ```sh
+    npx react-native start
+    a # for android
+    ```
