@@ -19,11 +19,10 @@ import {
 
 import {
   Colors,
-  DebugInstructions,
   Header,
-  LearnMoreLinks,
-  ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
+import Landing from "./components/Landing";
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -71,26 +70,15 @@ function App(): JSX.Element {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-        <Header />
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
+            flex: 1,
+            flexDirection: 'column',
           }}>
-          <Section title="Schedule Whatsapp messages easily!">
-            Schedule your WhatsApp messages easily with just a calendar.
-          </Section>
-          <Section title="Make automated payments hassle-free">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <Section title="Made with love from Team Scheduly">
-            &copy; Ayush Anand 2023
-          </Section>
+
+            <Landing />
+          
         </View>
       </ScrollView>
     </SafeAreaView>
